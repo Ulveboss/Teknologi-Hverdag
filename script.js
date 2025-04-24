@@ -4,6 +4,7 @@ let currentScenario = {}
 const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
 const nextButton = document.getElementById('nextButton');
+let currentId;
 
 
 fetch('scenarios.json')
@@ -19,7 +20,9 @@ fetch('scenarios.json')
 
 
 function showQuestion(id) {
-    const currentQuestion = currentScenario[id]
+    currentId = id
+    console.log(currentId, currentScenario)
+    const currentQuestion = currentScenario[currentId]
     if (!currentQuestion) {
         questionElement.textContent = "Scenariet er slut lil bro"
         answersElement.innerHTML = ""
@@ -39,6 +42,10 @@ function showQuestion(id) {
 }
 
 function start() {
+    if(currentId){
+        showQuestion(currentId)
+        return
+    }
     questionElement.textContent = "Vælg et scenarie:";
     answersElement.innerHTML = "";
 
@@ -56,5 +63,24 @@ function start() {
     });
 }
 function returner() {
+    currentId = undefined;
     start()
 }
+
+window.addEventListener('beforeunload', () =>{
+    const obj = {
+        id: currentId,
+        curr: currentScenario
+    }
+    localStorage.setItem('scenario', JSON.stringify(obj))
+})
+
+window.addEventListener('load', () => {
+    if(localStorage.getItem('scenario')) {
+        const obj = JSON.parse(localStorage.getItem('scenario'))
+        currentId = obj.id;
+        currentScenario = obj.curr;
+        console.log(obj)
+    }
+    
+})
