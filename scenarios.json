@@ -1,0 +1,35 @@
+{
+    "scenarios": {
+        "start": {
+            "text": "Simon tog sin hund med i skole, men Jakob er allergisk. Simon synes ikke det er hans skyld at jakob har immense skill issues og nægter at lade hunden være derhjemme. Jakob har spurgt dig om hjælp til at komme til en overensstemmelse så alle er glade. Hvad vil du gøre",
+            "answers": [
+                {
+                    "text": "Simon on skibidi stop med at tage din hund eller du får en på snøvsen",
+                    "next": "testing1"
+                },
+                {
+                    "text": "Jakob synes det er meget ufedt du har din hund med i skole. Måske kunne du overveje ikke at tage den med? Det er trods alt ikke hans skyld han er allergisk.",
+                    "next": "testing2"
+                }
+            ]
+        },
+        "testing1": {
+            "text": "Jeg fucking dræber dig Jonas",
+            "answers": [
+                {
+                    "text": "Mb G jeg troede du var chill like that",
+                    "next": "slut1"
+                },
+                {
+                    "text": "Simon jeg low differ dig hver dag come at me broski",
+                    "next": "goodending"
+                }
+
+            ]
+            
+        },
+        "slut1": {
+            "text": "KILL YOURSELF"
+        }
+    }
+}
