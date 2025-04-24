@@ -1,5 +1,5 @@
 {
-    "scenarios": {
+    "scenario1": {
         "start": {
             "text": "Simon tog sin hund med i skole, men Jakob er allergisk. Simon synes ikke det er hans skyld at jakob har immense skill issues og nægter at lade hunden være derhjemme. Jakob har spurgt dig om hjælp til at komme til en overensstemmelse så alle er glade. Hvad vil du gøre",
             "answers": [
@@ -30,6 +30,11 @@
         },
         "slut1": {
             "text": "KILL YOURSELF"
+        }
+    },
+    "scenario2": {
+        "start": {
+            "text": "HAIYAAAAAAAA"
         }
     }
 }

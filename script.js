@@ -1,6 +1,10 @@
 //icl ts pmo
-let scenarios = {}
-let currentQuestionIndex = 0
+let allScenarios = {}
+let currentScenario = {}
+const questionElement = document.getElementById("question");
+const answersElement = document.getElementById("answers");
+const nextButton = document.getElementById('nextButton');
+
 
 fetch('scenarios.json')
 
@@ -9,11 +13,13 @@ fetch('scenarios.json')
   .then(data => {
 
 
-    scenarios = data.scenarios;
+    allScenarios = data;
 
-    console.log(scenarios)
+    console.log(allScenarios)
 
-    showQuestion()
+    start()
+
+    // showQuestion()
 
   })
 
@@ -25,13 +31,12 @@ fetch('scenarios.json')
   
 
   function showQuestion(id) {
+    const currentQuestion = currentScenario[id]
 
-    const questionElement = document.getElementById("question");
-    const answersElement = document.getElementById("answers");
-    const nextButton = document.getElementById('nextButton');
-
-    const currentQuestion = scenarios[id]
-
+    if(!currentQuestion){
+        questionElement.textContent = "Scenariet er slut lil bro"
+        answersElement.innerHTML = ""
+    }
 
     questionElement.textContent = currentQuestion.text
     answersElement.innerHTML = ""
@@ -48,6 +53,23 @@ fetch('scenarios.json')
 
   }
 
-  function Start() {
-    
+  function start() {
+    questionElement.textContent = "Vælg et scenarie:";
+    answersElement.innerHTML = "";
+  
+    const scenarioList = Object.entries(allScenarios);
+  
+    scenarioList.forEach(([scenarioName, scenarioContent]) => {
+      const button = document.createElement('button');
+      button.textContent = scenarioName;
+      button.classList.add('answerButton');
+      button.onclick = () => {
+        currentScenario = scenarioContent;
+        showQuestion("start");
+      };
+      answersElement.appendChild(button);
+    });
   }
+    function returner() {
+        start()
+    }
