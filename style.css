@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fff8f0; /* Blanched Almond base */
+    background-color: #fff8f0; 
     color: #4b3e2e;
     margin: 0;
     padding: 2rem;
@@ -38,7 +38,7 @@ body {
   
   .answerButton,
   button {
-    background-color: #f5deb3; /* wheat */
+    background-color: #f5deb3; 
     color: #4b3e2e;
     border: none;
     padding: 0.75rem 1rem;

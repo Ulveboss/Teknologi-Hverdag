@@ -32,9 +32,109 @@
             "text": "KILL YOURSELF"
         }
     },
-    "scenario2": {
+    "Carl og Mathias": {
         "start": {
-            "text": "HAIYAAAAAAAA"
+            "text": "Du har været syg et par dage og er lige kommet tilbage i skole. Men den stemming du kommer tilbage til er ikke den du husker fra du sidst var her. Carl, som  ellers altid er så glad, sidder henne i hjørnet og surmuler. Mathias som skulle være hans bedste ven sidder også sammen med nogle han ikke plejer at være sammen med og virker lidt ved siden af sig selv. Hvad vil du gøre?",
+            "answers": [
+                {
+                    "text": "Vær ligeglad med begge parter og fokuser på dig selv",
+                    "next": "ending1"
+
+                },
+                {
+                    "text": "Find en person som ikke er Mathias eller Carl og prøv at få dem til at forklare situationen til dig",
+                    "next": "forklaring"
+                    
+                }
+            ]
+        },
+        "ending1": {
+            "text": "Du vælger ikke at tage nogen handling, du kommer dermed ikke til at eskalere situationen men du hjælpe heller ikke med at løse konflikten. Selvom ikke alle i klassen er en del af Mathias og Carls skænderi er alle mærket af den dårlige stemning",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+        },
+        "forklaring": {
+            "text": "Sara forklarer dig hvordan at Carl og Mathias skulle have været sammen i weekenden men Mathias aflyste i sidste øjeblik. Mathias mente ikke det var et stort problem siden de så tit er sammen. Carl derimod havde gået og glædet sig og følte sig uretfærdigt behandlet fordi Mathias's begrundelse for aflysningen ikke var særlig god.",
+            "answers": [
+                {
+                    "text": "Du går hen til Carl for at høre hans side af historien",
+                    "next": "carls side"
+                },
+                {
+                    "text": "Du går hen til Mathias for at høre hans side af historien *IKKE MERE HER*",
+                    "next": "mathias side"
+                }
+
+            ]
+        },
+        "carls side": {
+            "text": "Carl begynder at forklare men siger meget af det samme som du allerede har hørt fra Sara",
+            "answers": [
+                {
+                    "text": "Du vælger at høre hans side af historien",
+                    "next": "gladcarl"
+                },
+                {
+                    "text": "Du prøver at komme igennem til ham så hurtigt som muligt da du allerede kender historien og gerne vil have konflikten løst",
+                    "next": "utilfreds carl"
+
+                },
+                {
+                    "text": "Du tænker på hvilke løsninger der kunne være på problemet mens Carl forklarer",
+                    "next": "distraheret"
+                }
+            ]
+        },
+        "gladcarl": {
+            "text": "Carl forklarer hvordan at han føler at Mathias har undgået at være sammen med ham for tiden. Han synes det er lang tid siden de har været sammen bare de to og han altid enten aflyser eller prøver at invitere en trejde så de aldrig er bare dem. Carl kom til at lade sine frustationer løs og kaldte Mathias nogen navne han fortryder. Han synes dog heller ikke at Mathias er helt uskyldig i sagen",
+            "answers": [
+                {
+                    "text": "Du foreslår om de ikke skal prøve at tage en stlle og rolig snak med Mathias om situationen da du fornemmer en misforståelse",
+                    "next": "snak med mathias og carl"
+                },
+                {
+                    "text": "Sig til Carl at det bare er en misforståelse og Mathias umuligt kunne have ment det på den måde",
+                    "next": "utilfreds carl"
+                }
+            ]
+        },
+        "snak med mathias og carl": {
+            "text": "I går sammen over til Mathias. Du forklarer på bedste vis Carls perspektiv uden at bruge fornærmende sprog. Mathias kan nu godt se hvad Carl mener og undskylder da det ikke var med vilje. Carl ender også med at undskylde for det han kaldte Mathias. Begge parter bliver enige om det nok var en misforståelse og det er spild af energi at gå og være sure på hinanden",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+        },
+        "utilfreds carl": {
+            "text": "Carl kigger surt på dig og mumler noget med at der er da heller ikke nogen der anderkender hans følelser. Han går tilbage til at være sur og i får ikke løst konflikten",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                    
+                }
+            ]
+
+        },
+        "distraheret": {
+            "text": "Carl forklarer om sin side af historien men fordi dine tanker var andetsteds kan du ikke svare ham med et ærligt svar når han spørger dig om det ikke er uretfærdigt. Carl føler sig ikke hørt og ender med at være mere frustreret end du kom. Du er helt ligesom Mathias ingen af jer hører på hvad jeg siger eller mine behov mumler han surt mens jeg går derfra. Konflikten blev optrappet uden nogen løsning i sigte",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+        },
+        "mathias side": {
+            "text": ""
         }
+
+        
     }
 }
