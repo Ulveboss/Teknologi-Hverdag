@@ -1,37 +1,5 @@
 {
-    "scenario1": {
-        "start": {
-            "text": "Simon tog sin hund med i skole, men Jakob er allergisk. Simon synes ikke det er hans skyld at jakob har immense skill issues og nægter at lade hunden være derhjemme. Jakob har spurgt dig om hjælp til at komme til en overensstemmelse så alle er glade. Hvad vil du gøre",
-            "answers": [
-                {
-                    "text": "Simon on skibidi stop med at tage din hund eller du får en på snøvsen",
-                    "next": "testing1"
-                },
-                {
-                    "text": "Jakob synes det er meget ufedt du har din hund med i skole. Måske kunne du overveje ikke at tage den med? Det er trods alt ikke hans skyld han er allergisk.",
-                    "next": "testing2"
-                }
-            ]
-        },
-        "testing1": {
-            "text": "Jeg fucking dræber dig Jonas",
-            "answers": [
-                {
-                    "text": "Mb G jeg troede du var chill like that",
-                    "next": "slut1"
-                },
-                {
-                    "text": "Simon jeg low differ dig hver dag come at me broski",
-                    "next": "goodending"
-                }
 
-            ]
-            
-        },
-        "slut1": {
-            "text": "KILL YOURSELF"
-        }
-    },
     "Carl og Mathias": {
         "start": {
             "text": "Du har været syg et par dage og er lige kommet tilbage i skole. Men den stemming du kommer tilbage til er ikke den du husker fra du sidst var her. Carl, som  ellers altid er så glad, sidder henne i hjørnet og surmuler. Mathias som skulle være hans bedste ven sidder også sammen med nogle han ikke plejer at være sammen med og virker lidt ved siden af sig selv. Hvad vil du gøre?",
@@ -39,17 +7,16 @@
                 {
                     "text": "Vær ligeglad med begge parter og fokuser på dig selv",
                     "next": "ending1"
-
                 },
                 {
                     "text": "Find en person som ikke er Mathias eller Carl og prøv at få dem til at forklare situationen til dig",
-                    "next": "forklaring"
-                    
+                    "next": "saraforklarer"
                 }
             ]
         },
         "ending1": {
             "text": "Du vælger ikke at tage nogen handling, du kommer dermed ikke til at eskalere situationen men du hjælpe heller ikke med at løse konflikten. Selvom ikke alle i klassen er en del af Mathias og Carls skænderi er alle mærket af den dårlige stemning",
+            "forklaring": "Da du ikke engagerer dig i konflikten kommer der højst sandsynligt ikke til at ske noget. Dette hjælper dog ikke til at løse konflikten og den dårlige stemning vil forblive",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -57,7 +24,7 @@
                 }
             ]
         },
-        "forklaring": {
+        "saraforklarer": {
             "text": "Sara forklarer dig hvordan at Carl og Mathias skulle have været sammen i weekenden men Mathias aflyste i sidste øjeblik. Mathias mente ikke det var et stort problem siden de så tit er sammen. Carl derimod havde gået og glædet sig og følte sig uretfærdigt behandlet fordi Mathias's begrundelse for aflysningen ikke var særlig god.",
             "answers": [
                 {
@@ -65,7 +32,7 @@
                     "next": "carls side"
                 },
                 {
-                    "text": "Du går hen til Mathias for at høre hans side af historien *IKKE MERE HER*",
+                    "text": "Du går hen til Mathias for at høre hans side af historien",
                     "next": "mathias side"
                 }
 
@@ -91,6 +58,7 @@
         },
         "gladcarl": {
             "text": "Carl forklarer hvordan at han føler at Mathias har undgået at være sammen med ham for tiden. Han synes det er lang tid siden de har været sammen bare de to og han altid enten aflyser eller prøver at invitere en trejde så de aldrig er bare dem. Carl kom til at lade sine frustationer løs og kaldte Mathias nogen navne han fortryder. Han synes dog heller ikke at Mathias er helt uskyldig i sagen",
+            "forklaring": "Carl siger det ikke direkte men han sætter stor pris på at du hører på hans side af historien selvom du godt ved hvad der er sket. Det kaldes træk kommunikation og er et godt værktøj til at konfliktnedtrappe. Sæt tid af og sørg for at alle parter føler sig hørt og ingen bliver gået hurtigt henover uden at få lov til at give deres perspektiv.",
             "answers": [
                 {
                     "text": "Du foreslår om de ikke skal prøve at tage en stlle og rolig snak med Mathias om situationen da du fornemmer en misforståelse",
@@ -98,12 +66,13 @@
                 },
                 {
                     "text": "Sig til Carl at det bare er en misforståelse og Mathias umuligt kunne have ment det på den måde",
-                    "next": "utilfreds carl"
+                    "next": "utilfreds carl2"
                 }
             ]
         },
         "snak med mathias og carl": {
             "text": "I går sammen over til Mathias. Du forklarer på bedste vis Carls perspektiv uden at bruge fornærmende sprog. Mathias kan nu godt se hvad Carl mener og undskylder da det ikke var med vilje. Carl ender også med at undskylde for det han kaldte Mathias. Begge parter bliver enige om det nok var en misforståelse og det er spild af energi at gå og være sure på hinanden",
+            "forklaring": "Du anderkender Carls synspunkt og uden at angribe ham foreslår det kan være en misforståelse. Carl føler sig dermed hørt og hans side af historien valid. Det gør det nemmere for ham at acceptere en eventuel misforståelse og hjælper med at få det hele på plads igen",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -113,6 +82,19 @@
         },
         "utilfreds carl": {
             "text": "Carl kigger surt på dig og mumler noget med at der er da heller ikke nogen der anderkender hans følelser. Han går tilbage til at være sur og i får ikke løst konflikten",
+            "forklaring": "Du afbryder Carl midt i hans fortælling og selvom du allerede har hørt det fra Sara bliver Carl fornærmet. Det er tryk kommunikation og som en frustreret person kan man føle ens side af historien eller synspunkt ikke er lige så vigtigt som det man allerede har fået. Det kan være med til at eskalere konflikter og bør undgås.",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                    
+                }
+            ]
+
+        },
+        "utilfreds carl2": {
+            "text": "Carl kigger surt på dig og mumler noget med at der er da heller ikke nogen der anderkender hans følelser. Han går tilbage til at være sur og i får ikke løst konflikten",
+            "forklaring": "Du kommer til at bruge sprog som virker angribende på Carl. Han føler ikke han er blevet ordentlig hørt og hans side af historien forsåtet. Du kommer til at vælge side i konflikten og det gør Carl sur. Selvom du ikke mener det ondt kan det være noget der er med til at eksalere konflikter",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -124,6 +106,7 @@
         },
         "distraheret": {
             "text": "Carl forklarer om sin side af historien men fordi dine tanker var andetsteds kan du ikke svare ham med et ærligt svar når han spørger dig om det ikke er uretfærdigt. Carl føler sig ikke hørt og ender med at være mere frustreret end du kom. Du er helt ligesom Mathias ingen af jer hører på hvad jeg siger eller mine behov mumler han surt mens jeg går derfra. Konflikten blev optrappet uden nogen løsning i sigte",
+            "forklaring": "Da du glemmer at høre efter bliver Carl fornærmet. Selvom det var din bedste hensigt og du tænkte på hvordan problemet kunne løses imens går det udover Carl når han ikke føler sig hørt. Det fornærmer ham og ender med ikke at løse konflikten. Man skal meget tid af i konfliktløsning til bare at høre på hvad alle har at sige for ikke at gøre nogle mere sure. Løsningerne må komme bagefter og det må tage den tid det tager.",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -132,7 +115,37 @@
             ]
         },
         "mathias side": {
-            "text": ""
+            "text": "Du hører Mathias' forklarng og baseret på hans historie kommer du frem til at der er tale om en misforståelse, det var ikke meningen at Carl skulle blive sur.",
+            "answers": [
+                {
+                    "text": "Du prøver at bruge stille og roligt samt balanceret sprog. Du prøver at forklare hvordan der nok er sket en misforståele og om de ikke kunne få snakket om det",
+                    "next": "mathias sur"
+                },
+                {
+                    "text": "Du taler på en uændret måde, og prøver at forklare hvordan der er tale om en misforståelse",
+                    "next": "mathias glad"
+                }
+            ]
+        },
+        "mathias sur": {
+            "text": "Mathias føler sig fornærmet af dit sprog og toneleje og føler ikke du tager ham alvorligt. Han gider derfor ikke undskylde til Carl og konflikten hænger stadig i luften",
+            "forklaring": "Selvom det var i bedste hensigt at ændre på dit sprog kommer det til at virke fornærmende. Man skal prøve at matche den måde den anden snakker til dig på. Hvis det er et barn som snakker til et andet barn kan du ikke snakke tilbage som om du er et voksen der snakker til et barn. Det skaber overlap i transaktionsanalyse og kan være med til at eskalere konflikter",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+        },
+        "mathias glad": {
+            "text": "Mathias kan godt se dit perspektiv og i går sammen hen til Carl og snakker stille og roligt om tingene. Det ender med de får snakket om det og de bliver gode venner igen",
+            "forklaring": "Du snakker uændret og rammer derfor rigtigt i forhold til transaktionsanalyse. Det gør at Mathias har nemmere ved at høre på hvad du har og sige og nemmere ved at acceptere det løsningsforslag du kommer med.",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
         }
 
         

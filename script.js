@@ -39,7 +39,7 @@ function showQuestion(id) {
             answersElement.appendChild(button)
         })
     }
-
+    console.log(currentQuestion.forklaring)
     forklaring(currentQuestion.forklaring);
 }
 
@@ -84,6 +84,8 @@ function forklaring(forklaring) {
 
 function returner() {
     currentId = undefined;
+    currentScenario = {};
+    localStorage.setItem('scenario', undefined) 
     start()
 }
 
