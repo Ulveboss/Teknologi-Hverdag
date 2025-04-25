@@ -1,6 +1,7 @@
 //icl ts pmo
 let allScenarios = {}
 let currentScenario = {}
+const headerElement = document.getElementById('header');
 const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
 const nextButton = document.getElementById('nextButton');
@@ -39,7 +40,7 @@ function showQuestion(id) {
             answersElement.appendChild(button)
         })
     }
-
+    
     forklaring(currentQuestion.forklaring);
 }
 
@@ -48,6 +49,7 @@ function start() {
         showQuestion(currentId)
         return
     }
+    headerElement.textContent = 'Velkommen til vores sociale træner'
     questionElement.textContent = "Vælg et scenarie:";
     answersElement.innerHTML = "";
 
@@ -59,6 +61,7 @@ function start() {
         button.classList.add('answerButton');
         button.onclick = () => {
             currentScenario = scenarioContent;
+            headerElement.textContent = scenarioName;
             showQuestion("start");
         };
         answersElement.appendChild(button);
