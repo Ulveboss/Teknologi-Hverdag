@@ -39,6 +39,8 @@ function showQuestion(id) {
             answersElement.appendChild(button)
         })
     }
+
+    forklaring(currentQuestion.forklaring);
 }
 
 function start() {
@@ -61,7 +63,25 @@ function start() {
         };
         answersElement.appendChild(button);
     });
+
+    forklaring(false)
 }
+
+function forklaring(forklaring) {
+    const coll = document.querySelector(".collapsible");
+    const forklaringBox = document.querySelector(".forklaring");
+
+    if (forklaring) {
+        coll.style.display = "block";
+        forklaringBox.innerHTML = forklaring;
+    } else {
+        coll.style.display = "none";
+        forklaringBox.innerHTML = "";
+        coll.classList.remove("active");
+        forklaringBox.style.maxHeight = null;
+    }
+}
+
 function returner() {
     currentId = undefined;
     start()
@@ -82,5 +102,15 @@ window.addEventListener('load', () => {
         currentScenario = obj.curr;
         console.log(obj)
     }
-    
+    start()
 })
+
+document.querySelector(".collapsible").addEventListener("click", function () {
+    this.classList.toggle("active");
+    const forklaring = this.nextElementSibling;
+    if (forklaring.style.maxHeight) {
+        forklaring.style.maxHeight = null;
+    } else {
+        forklaring.style.maxHeight = forklaring.scrollHeight + "px";
+    }
+});
