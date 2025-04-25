@@ -6,6 +6,7 @@ const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
 const nextButton = document.getElementById('nextButton');
 let currentId;
+let scenarioName;
 
 
 fetch('scenarios.json')
@@ -22,10 +23,11 @@ fetch('scenarios.json')
 
 function showQuestion(id) {
     currentId = id
+    headerElement.textContent = scenarioNavn;
     console.log(currentId, currentScenario)
     const currentQuestion = currentScenario[currentId]
     if (!currentQuestion) {
-        questionElement.textContent = "Scenariet er slut lil bro"
+        questionElement.textContent = "Fejl, returner til starten"
         answersElement.innerHTML = ""
     }
     questionElement.textContent = currentQuestion.text
@@ -61,7 +63,7 @@ function start() {
         button.classList.add('answerButton');
         button.onclick = () => {
             currentScenario = scenarioContent;
-            headerElement.textContent = scenarioName;
+            scenarioNavn = scenarioName;
             showQuestion("start");
         };
         answersElement.appendChild(button);
@@ -93,7 +95,8 @@ function returner() {
 window.addEventListener('beforeunload', () =>{
     const obj = {
         id: currentId,
-        curr: currentScenario
+        curr: currentScenario, 
+        name: scenarioNavn
     }
     localStorage.setItem('scenario', JSON.stringify(obj))
 })
@@ -103,6 +106,7 @@ window.addEventListener('load', () => {
         const obj = JSON.parse(localStorage.getItem('scenario'))
         currentId = obj.id;
         currentScenario = obj.curr;
+        scenarioNavn = obj.name;
         console.log(obj)
     }
     start()
