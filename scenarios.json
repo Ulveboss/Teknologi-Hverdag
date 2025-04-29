@@ -149,5 +149,102 @@
         }
 
         
+    },
+    "Noahs nye klasse": {
+        "start": {
+            "text": "Noah er lige skiftet skole pga. mobning og manglende selvtillid på hans tidligere skole. Noah lider af ADHD og har derfor svært ved at sidde stille og fokusere på længerevarende opgaver. Hans gamle klassekammerater havde svært ved at acceptere ham og hans diagnose, han håber derfor på at hans nye klassekammerater kommer til at have en mere åben holdning og ikke dømmer ham på baggrund af hans diagnose. Det går meget godt for Noah de første par uger han går på skolen. Men pludselig går der rygter på gangen om at han lider af ADHD. Du har været i gruppe med ham de sidste par gange i matematik og er blevet gode venner med ham. Du har heller ikke følt at han var anderledes. Hvad vil du gøre?",
+            "answers": [
+                {
+                    "text": "Du fortæller Noah om rygtet",
+                    "next": "adhd"
+                },
+                {
+                    "text": "Du begynder at tage afstand fra Noah da du har negative konnotationer med ADHD",
+                    "next": "konfrontation"
+                },
+                {
+                    "text": "Du vælger ikke at spørge ind til det og fortsætter jeres venskab som før",
+                    "next": "ligeglad"
+                }
+            ]
+        },
+        "ligeglad": {
+            "text": "Du ender med ikke at sige noget til Noah omkring rygtet. Noah ender alligevel med at høre rygtet gennem andre folk. Han ved du vidste det og er skuffet over at du ikke sagde noget til ham. Det er rigtigt at han har ADHD men ville ikke sige noget fordi han ikke ville behandles anderledes på grund af sin diagnose. ",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+            
+        },
+        "konfrontation": {
+            "text": "Du tager afstand fra Noah, og efter et par dage hører han selv om rygtet. Han konfronterer dig om dit sociale fravær. Han spørger dig om det er fordi han har ADHD at du har undgået ham? Du forklarer hvordan at du tidligere har haft en dårlig oplevelse med en kammerat som havde ADHD. Noah prøver på at forklare hvordan ikke alle folk med ADHD reagerer på deres diagnose på samme måde, og det er ikke sikkert at han håndterer det på samme måde som hans tidligere kammerat.",
+            "answers": [
+                {
+                    "text": "Du vælger at høre på hvad Noah har at sige",
+                    "next": "goodending"
+                },
+                {
+                    "text": "Du vælger at ignorere Noahs forklaring",
+                    "next": "badending"
+                }
+            ]
+        },
+        "goodending": {
+            "text": "Noah har en masse på hjerte og fortæller om lige netop hans historie og erfaringer med ADHD. Det ligner intet af hvad du tidligere har oplevet og du bliver positivt overrasket. Du reetablerer dit venskab med ham og hjælper ham med at bekæmpe de fordomme som de andre evnetuelt skulle have om ham.",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+        },
+        "badending": {
+            "text": "Eftersom du vælger ikke at høre på Noahs forklaring bliver han sur og ked af det. Det er videre med til at støtte dine dårlige konnotationer for folk med ADHD. Der er ikke nogen der hjælper Noah falde godt til og han ender kort tid efter med at skifte skole igen.",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+          
+
+        },
+        "adhd": {
+            "text": "Noah er glad for at du fortæller ham om rygtet. Han er ked af at høre at der går sådanne rygter om ham, men erkender at han faktisk har ADHD.",
+            "answers": [
+                {
+                    "text": "Du vælger at tage afstand fra Noah på grund af dine negative konnotationer med ADHD",
+                    "next": "afstand"
+                },
+                {
+                    "text": "Du vælger at spørge ind til hans diagnose med et åbent sind",
+                    "next": "snakke"
+                }
+            ]
+
+        },
+        "afstand": {
+            "text": "Efter Noah mister dig som ven har han svært ved at finde sig til rette på sin nye skole. Rygtet rammer ham hårdt og fordommende de andre børn går rundt med gør det ikke nemmere for ham at finde nye venner.",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+        },
+        "snakke": {
+            "text": "Du snakker med Noah om hans diagnose. Det går op for dig at dine tidligere oplevelser har malet et enformigt billede der oberhovedt ikke portætterer virkeligheden. Du tænker på alle de andre på årgangen og hvorvidt de også har misvisende billeder i deres hoved om ADHD. Du går derfor sammen med Noah om at lave en præsentation på ADHD som i viser foran klassen for at opklare eventuelle misforståelser.",
+            "answers": [
+                {
+                    "text": "Tilbage til starten af dette scenarie",
+                    "next": "start"
+                }
+            ]
+    
+        }
+
     }
+    
 }
