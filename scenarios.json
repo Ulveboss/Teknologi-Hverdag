@@ -170,6 +170,7 @@
         },
         "ligeglad": {
             "text": "Du ender med ikke at sige noget til Noah omkring rygtet. Noah ender alligevel med at høre rygtet gennem andre folk. Han ved du vidste det og er skuffet over at du ikke sagde noget til ham. Det er rigtigt at han har ADHD men ville ikke sige noget fordi han ikke ville behandles anderledes på grund af sin diagnose. ",
+            "forklaring": "Da du ikke siger noget til Noah føler han sig såret da han troede i var venner. Dette er fordi der går et negativ rygte om ham på gangene og du valgte ikke at fortælle ham om det. ",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -180,6 +181,7 @@
         },
         "konfrontation": {
             "text": "Du tager afstand fra Noah, og efter et par dage hører han selv om rygtet. Han konfronterer dig om dit sociale fravær. Han spørger dig om det er fordi han har ADHD at du har undgået ham? Du forklarer hvordan at du tidligere har haft en dårlig oplevelse med en kammerat som havde ADHD. Noah prøver på at forklare hvordan ikke alle folk med ADHD reagerer på deres diagnose på samme måde, og det er ikke sikkert at han håndterer det på samme måde som hans tidligere kammerat.",
+            "forklaring": "Her vælger du at sætte dine egne behov forrest, i overbevisning om at det beskytte dig mest. Det er der ikke nødvendigvis noget galt med, men folk reagerer når man sætter sig selv forrest.",
             "answers": [
                 {
                     "text": "Du vælger at høre på hvad Noah har at sige",
@@ -193,6 +195,7 @@
         },
         "goodending": {
             "text": "Noah har en masse på hjerte og fortæller om lige netop hans historie og erfaringer med ADHD. Det ligner intet af hvad du tidligere har oplevet og du bliver positivt overrasket. Du reetablerer dit venskab med ham og hjælper ham med at bekæmpe de fordomme som de andre evnetuelt skulle have om ham.",
+            "forklaring": "Du vælger at tilsidesætte dine behov for at høre på hvad Noah har at sige. Det betyder meget for Noah og han hjælper dig overkomme dine fordomme. Dette er også ifølge Lévinas ansigts etik det rigtige at gøre da man ikke er menneske før man anerkender den anden uendelige forskelle og behov.",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -202,6 +205,7 @@
         },
         "badending": {
             "text": "Eftersom du vælger ikke at høre på Noahs forklaring bliver han sur og ked af det. Det er videre med til at støtte dine dårlige konnotationer for folk med ADHD. Der er ikke nogen der hjælper Noah falde godt til og han ender kort tid efter med at skifte skole igen.",
+            "forklaring": "Du vælger igen at sætte dine egne behov forrest og derfor får du ikke bekæmpet dine fordomme.",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -227,6 +231,7 @@
         },
         "afstand": {
             "text": "Efter Noah mister dig som ven har han svært ved at finde sig til rette på sin nye skole. Rygtet rammer ham hårdt og fordommende de andre børn går rundt med gør det ikke nemmere for ham at finde nye venner.",
+            "forklaring": "Du vælger at prioritere dine egne behov (etisk egoisme), dette er ikke nødvendigvis et 'forkert' valg, men begrænser mulighederne du kan få i livet.",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
@@ -236,6 +241,7 @@
         },
         "snakke": {
             "text": "Du snakker med Noah om hans diagnose. Det går op for dig at dine tidligere oplevelser har malet et enformigt billede der oberhovedt ikke portætterer virkeligheden. Du tænker på alle de andre på årgangen og hvorvidt de også har misvisende billeder i deres hoved om ADHD. Du går derfor sammen med Noah om at lave en præsentation på ADHD som i viser foran klassen for at opklare eventuelle misforståelser.",
+            "forklaring": "Du vælger at tilsidesætte dine egne behov for at høre på hvad Noah har at sige. Det er, ifølge Lévinas ansigts etik, det rigtige at gøre da man ikke er menneske før man anerkender den 'anden' og deres uendelige behov og forskelle.",
             "answers": [
                 {
                     "text": "Tilbage til starten af dette scenarie",
